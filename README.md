@@ -5,6 +5,7 @@ I'm finishing an AAS in Artificial Intelligence in IT at DMACC (May 2027), and I
 ## Projects
 
 - **[ai4i-predictive-maintenance](https://github.com/drewmenning/ai4i-predictive-maintenance)**: capstone for AAI 201. On the AI4I 2020 dataset (3.4% failures), HistGradientBoosting with a validation-tuned threshold caught 41 of 51 test failures with 4 false alarms (test recall 0.80; validation recall at the same threshold was 0.61). A fairness check by product grade then found it caught 0 of 4 Type H failures in validation, which the overall numbers hide.
+- **[iowa-county-crop-ops](https://github.com/drewmenning/iowa-county-crop-ops)**: built outside class in October 2026. USDA NASS county corn and soybean estimates for all 99 Iowa counties (2000 to 2025) joined to Iowa Environmental Mesonet weather in a SQLite star schema, with six SQL queries (window functions and a trend fit done in SQL), a Plotly dashboard and a memo for a grain elevator manager. In 2012, 91 of 99 counties came in 10% or more below their corn yield trend; bad corn years averaged 2.8 inches of July rain against 4.3 in normal years.
 - **[deep-learning-architectures](https://github.com/drewmenning/deep-learning-architectures)**: MLP, CNN and LSTM in PyTorch. On 800 Fashion-MNIST training images the MLP (80.7%) and the CNN (78.3%) finished within noise of each other, and the CNN was still undertrained. A character-level LSTM on Tiny Shakespeare reached validation perplexity 4.74.
 - **[rl-qlearning-assignment](https://github.com/drewmenning/rl-qlearning-assignment)**: tabular Q-learning from scratch on Taxi-v3. After 5,000 training episodes the greedy policy finished 200 of 200 test trips, averaging 13.35 steps and a reward of 7.65 (random policy: -763.9).
 - **[model-evaluation-overfitting-assignment](https://github.com/drewmenning/model-evaluation-overfitting-assignment)**: a stratified 70/15/15 split of 20,000 Fashion-MNIST images. A regularized CNN (augmentation, dropout, batch normalization, early stopping) reached 85.8% test accuracy against 83.9% for a dense baseline, while test loss rose from 0.47 to 0.58.
@@ -20,4 +21,4 @@ I'm finishing an AAS in Artificial Intelligence in IT at DMACC (May 2027), and I
 
 ## Tools
 
-Python, pandas, NumPy, scikit-learn, SciPy, PyTorch, TensorFlow and Keras, Gymnasium, matplotlib, seaborn, Jupyter, Google Colab.
+Python, pandas, NumPy, scikit-learn, SciPy, PyTorch, TensorFlow and Keras, Gymnasium, SQL (SQLite), matplotlib, seaborn, Plotly, Jupyter, Google Colab.
